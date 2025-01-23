@@ -1,0 +1,21 @@
+[package]
+name = "mysqlsimple"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+rocket = { version = "0.5.0-rc.1", features = ["json"] }
+mysql_async =  "0.30"
+tokio = { version = "1", features = ["macros"] } # Required for async I/O
+dotenv = "0.15.0"
+uuid = { version = "1.4.1", features = ["v4"] }
+serde = { version = "1.0", features = ["derive"] }
+chrono = "0.4"
+ammonia = "3.1.2"
+argon2 = "0.3"
+rand_core = {version = "0.6", features = ["std"]}
+regex = "1.5.4"
+zxcvbn = "2"
+
+[dependencies.mysql_common]
+features = ["chrono"]
