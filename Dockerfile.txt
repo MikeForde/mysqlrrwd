@@ -1,4 +1,4 @@
-FROM rust:bullseye
+FROM influxdb/rust:cb7bb9547
 
 COPY ./ ./
 
